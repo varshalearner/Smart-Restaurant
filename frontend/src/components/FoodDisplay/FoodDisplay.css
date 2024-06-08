@@ -1,0 +1,13 @@
+.food-display-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  margin-top: 2rem;
+  position: relative;
+  transition: all 2s ease;
+
+}
+h2{
+    margin-top: 2rem;
+}

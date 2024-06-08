@@ -1,0 +1,106 @@
+/* Header.css */
+.header {
+  height: 80vh;
+  background: url("/header_img.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 10%;
+  gap: 10px;
+  margin-top: 10vh;
+  border-radius: 20px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  color: white;
+  animation: fadeIn 1s forwards;
+  position: relative;
+}
+
+.header-content h2 {
+  font-size: max(4.5vw, 22px);
+  padding-right: 50%;
+}
+
+.header-content p {
+  font-size: 4vh;
+  text-shadow: 1px 1px 0px gray;
+}
+
+.header-content button {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: 600;
+  background-color: white;
+  color: orange;
+  width: 30%;
+  font-size: 2vw;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.header-content button:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .header-content h2 {
+    font-size: max(6vw, 22px);
+    padding-right: 0;
+  }
+
+  .header-content p {
+    font-size: 3vh;
+  }
+
+  .header-content button {
+    width: 50%;
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 60vh;
+    padding: 5%;
+  }
+
+  .header-content h2 {
+    font-size: max(8vw, 18px);
+  }
+
+  .header-content p {
+    font-size: 2.5vh;
+  }
+
+  .header-content button {
+    width: 60%;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 50vh;
+    padding: 5%;
+  }
+
+  .header-content h2 {
+    font-size: max(10vw, 16px);
+  }
+
+  .header-content p {
+    font-size: 2vh;
+  }
+
+  .header-content button {
+    width: 70%;
+    font-size: 4vw;
+  }
+}

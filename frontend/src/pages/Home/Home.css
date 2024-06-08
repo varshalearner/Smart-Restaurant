@@ -1,0 +1,11 @@
+.home {
+  width: 90%;
+  /* margin-top: ; */
+  margin: auto;
+}
+.footer {
+  width: 100vw;
+  margin-top: 8vh;
+  position: absolute;
+  left: 0;
+}
