@@ -11,15 +11,16 @@ const Navbar = ({ setShowLogin }) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const {getTotalCartAmount} = useContext(StoreContext);
+  const {getTotalCartAmount, token, setToken} = useContext(StoreContext);
   return (
     <div className="navbar">
+      <div id="home"></div>
       <Link to="/">
         <img src={assets.logo} alt="logo " className="logo" />
       </Link>
 
       <ul className={isMenuOpen ? "nav-menu open" : "nav-menu"}>
-        <Link to="/">
+        <a to="#home">
           <li
             className={menu === "home" ? "active" : ""}
             onClick={() => {
@@ -29,7 +30,7 @@ const Navbar = ({ setShowLogin }) => {
           >
             home
           </li>
-        </Link>
+        </a>
         <a href="#menu">
           <li
             className={menu === "menu" ? "active" : ""}
@@ -59,17 +60,7 @@ const Navbar = ({ setShowLogin }) => {
         >
           contact us
         </li>
-        <li>
-          <p
-            className=""
-            onClick={() => {
-              setShowLogin(true);
-              setIsMenuOpen(false);
-            }}
-          >
-            sign in
-          </p>
-        </li>
+        
       </ul>
       <div className="navbar-right">
         <img src={assets.search_icon} alt="search" />
@@ -79,9 +70,9 @@ const Navbar = ({ setShowLogin }) => {
             <div className={getTotalCartAmount()>0?"dot":""}></div>
           </Link>
         </div>
-        <button className="sign-in" onClick={() => setShowLogin(true)}>
+        {(!token)?<button className="sign-in" onClick={() => setShowLogin(true)}>
           sign in
-        </button>
+        </button>:<></>}
       <button className="menu-toggle" onClick={toggleMenu}>
         {isMenuOpen ? "✖" : "☰"}
       </button>

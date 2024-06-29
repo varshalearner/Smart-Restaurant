@@ -10,9 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.login-popup-box {
+  }
+  
+  .login-popup-box {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 2rem;
     border-radius: 16px;
@@ -22,51 +22,50 @@
     width: 90%;
     max-width: 400px;
     animation: fadeIn 0.5s;
-}
-
-.login-popup-title {
+  }
+  
+  .login-popup-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.login-popup-title h2 {
+  }
+  
+  .login-popup-title h2 {
     margin: 0;
     font-size: 1.5rem;
-}
-
-.login-popup-title img {
+  }
+  
+  .login-popup-title img {
     cursor: pointer;
     width: 16px;
-    padding: .2rem;  /* height: 24px; */
-}
-
-.login-popup-title img:hover{
-    padding: .2rem;  /* height: 24px; */
-    /* background-color: gray; */
+    padding: 0.2rem;
+  }
+  
+  .login-popup-title img:hover {
+    padding: 0.2rem;
     border: 2px solid rgb(142, 141, 141);
-    border-radius: .2rem;
-
-}
-
-.login-popup-input {
+    border-radius: 0.2rem;
+  }
+  
+  .login-popup-input {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-}
-
-.login-popup-input input {
+  }
+  
+  .login-popup-input input {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1rem;
     outline: none;
-}
-.login-popup-input input:focus{
-    
+  }
+  
+  .login-popup-input input:focus {
     border: 2px solid #ccc;
-}
-button {
+  }
+  
+  button {
     padding: 0.75rem;
     border: none;
     border-radius: 8px;
@@ -75,30 +74,28 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: rgb(230, 152, 9);
-}
-
-.login-popup-condition {
+  }
+  
+  .login-popup-condition {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
-
-
-
-
-.login-popup p {
+  }
+  
+  .login-popup p {
     font-size: 0.875rem;
-}
-
-.login-popup span {
+  }
+  
+  .login-popup span {
     color: orangered;
     cursor: pointer;
-}
-
-.login-popup span:hover {
+  }
+  
+  .login-popup span:hover {
     text-decoration: underline;
-}
+  }
+  

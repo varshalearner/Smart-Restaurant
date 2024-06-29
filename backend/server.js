@@ -2,7 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import { connectDB } from './config/db.js';
 import foodRouter from './routes/foodRoutes.js';
-
+import userRouter from './routes/userRoutes.js';
+import "dotenv/config"
 
 
 
@@ -25,8 +26,10 @@ app.use(cors());
 
 
 // api end points
-app.get('/api/food',foodRouter);
-
+app.use('/api/food',foodRouter);
+app.use('/api/user',userRouter);
+app.use('/images',express.static('uploads'));
+//at path /images uploads folder data is staticly floated
 
 
 app.get('/',(req,res)=>{

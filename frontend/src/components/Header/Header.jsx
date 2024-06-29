@@ -13,6 +13,7 @@ const Header = () => {
         </p>
         <button>Discover Our Menu</button>
       </div>
+      <div id='menu'></div>
     </div>
   );
 };
